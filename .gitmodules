@@ -1,0 +1,3 @@
+[submodule "singularity_runner"]
+	path = singularity_runner
+	url = git@github.com:stephansmit/singularity_runner.git
