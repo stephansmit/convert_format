@@ -1,4 +1,8 @@
-from singularity_runner.sinexecuter import *
+try:
+    from .singularity_runner.sinexecuter import *
+except:
+    from singularity_runner.sinexecuter import *
+
 import os  
 
 class FormatConverter(object):
