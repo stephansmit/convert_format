@@ -14,6 +14,8 @@ class FormatConverter(object):
     def convert_to_wmf(self,inputf_n, outputf_n, bind_dir):
        runner = SinExecuter(self.image_name, self.image_url, self.image_dir)
        cmd = ['inkscape','--file' ,inputf_n, '--export-wmf', outputf_n]
-       runner.run(cmd,bind_dir)
+       output = runner.run(cmd,bind_dir)
+       for line in output:
+           print(line)
 
 
